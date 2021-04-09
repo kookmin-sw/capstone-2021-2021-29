@@ -58,4 +58,4 @@ Github : https://github.com/childyouth
 2. 딥러닝 - 1d cnn, rnn
 
 **영상+메타 데이터 이용**
-1. Resnet + lstm
+1. VGG16 / Resnet + lstm
