@@ -5,7 +5,7 @@
 ### 1. 프로잭트 소개
 
 프로젝트
-![socar](image/socar_image.png)
+![socar](image/socar_image.jpg)
 
 ### 2. 팀 소개
 
