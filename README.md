@@ -3,7 +3,7 @@
 **팀페이지 주소** -> https://kookmin-sw.github.io/capstone-2021-29
 
 ### 1. 프로잭트 소개
- 
+
 ![socar](image/socar_image.jpg)  
 
 저희의 프로젝트 목표는 블랙박스 데이터를 이용하여 사고 여부를 판단하는 것입니다.  
@@ -41,9 +41,9 @@ Github : https://github.com/whduddhks
 조익현
 
 학번: 20181695  
-E-mail: 
+E-mail: 8982679@kookmin.ac.kr
 역할 : 영상, 메타 데이터를 합친 모델 개발
-Github : 
+Github : https://github.com/childyouth
 ```
 
 ### 3. 개발  
