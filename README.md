@@ -23,6 +23,12 @@ Normal 영상은 이벤트가 없는 일반적인 주행 또는 정차된 블랙
 ### 2. 팀 소개
 
 ```markdown
+담당 교수님: 이재구
+
+E-mail: jaekoo@kookmin.ac.kr
+```
+
+```markdown
 조영완
 
 학번: 20181694  
