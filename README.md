@@ -4,9 +4,8 @@
 
 ### 1. 프로잭트 소개
 
-프로젝트
-![socar](image/socar_image.jpg){: width="150" height="150"}  
-<img src="image/socar_image.jpg", width="100">
+프로젝트  
+![socar](image/socar_image.jpg){:width="150" height="150"}  
 
 ### 2. 팀 소개
 
