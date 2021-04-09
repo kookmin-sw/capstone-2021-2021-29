@@ -46,4 +46,11 @@ E-mail:
 Github : 
 ```
 
-### 3. 개발
+### 3. 개발  
+
+**메타 데이터 이용**
+1. 머신러닝 - decision tree, Random Forest
+2. 딥러닝 - 1d cnn, rnn
+
+**영상+메타 데이터 이용**
+1. Resnet + lstm
