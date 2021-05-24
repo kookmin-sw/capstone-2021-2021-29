@@ -53,6 +53,10 @@ Github : https://github.com/childyouth
 따라서, 1차적으로 메타 데이터만을 이용하여 사고를 검출하는 방법을 선택했고  
 영상과 메타 데이터를 한번에 이용하는 모델 개발 방법을 선택했습니다.
 
+
+### 4. 시연영상 (유튜브)
+[![시연](http://img.youtube.com/vi/UQWx4GgbSds/0.jpg)](https://youtu.be/UQWx4GgbSds) 
+
 **메타 데이터 이용**
 1. 머신러닝 - decision tree, Random Forest
 2. 딥러닝 - 1d cnn, rnn
