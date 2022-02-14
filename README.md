@@ -1,77 +1,65 @@
-[![Work in Repl.it](https://classroom.github.com/assets/work-in-replit-14baed9a392b3a25080506f3b7b6d57f295ec2978f6f33ec97e36a161684cbe9.svg)](https://classroom.github.com/online_ide?assignment_repo_id=393413&assignment_repo_type=GroupAssignmentRepo)
-# Welcome to GitHub
+# 블랙박스 데이터를 이용한 사고 영상 검출
 
-캡스톤 팀 생성을 축하합니다.
-
-## 팀소개 및 페이지를 꾸며주세요.
-
-- 프로젝트 소개
-  - 프로젝트 설치방법 및 데모, 사용방법, 프리뷰등을 readme.md에 작성.
-  - Api나 사용방법등 내용이 많을경우 wiki에 꾸미고 링크 추가.
-
-- 팀페이지 꾸미기
-  - 프로젝트 소개 및 팀원 소개
-  - index.md 예시보고 수정.
-
-- GitHub Pages 리파지토리 Settings > Options > GitHub Pages 
-  - Source를 marster branch
-  - Theme Chooser에서 태마선택
-  - 수정후 팀페이지 확인하여 점검.
-
-**팀페이지 주소** -> https://kookmin-sw.github.io/ '{{자신의 리파지토리 아이디}}'
-
-**예시)** 2020년 0조  https://kookmin-sw.github.io/capstone-2020-0/
-
-
-## 내용에 아래와 같은 내용들을 추가하세요.
+**팀페이지 주소** -> https://kookmin-sw.github.io/capstone-2021-29
 
 ### 1. 프로잭트 소개
 
-프로젝트
+![socar](image/socar_image.jpg)  
 
-### 2. 소개 영상
+저희의 프로젝트 목표는 블랙박스 데이터를 이용하여 사고 여부를 판단하는 것입니다.  
 
-프로젝트 소개하는 영상을 추가하세요
+블랙박스 데이터는 Normal과 Event 영상으로 나뉩니다.  
+Event 영상은 블랙박스가 자체적으로 이벤트, 즉 사고를 감지하여 데이터를 처리한 영상입니다.
+Normal 영상은 이벤트가 없는 일반적인 주행 또는 정차된 블랙박스 영상입니다.
 
-### 3. 팀 소개
+하지만 Normal 영상에서도 다양한 사고가 발생하고 있습니다.  
+특히, 차의 후면 또는 휠 등 블랙박스에 찍힐 수 없는 부분이 어딘가에 긁히거나 부딪치는 사고입니다.
 
-팀을 소개하세요.
+이러한 사고의 경우에는 사용자가 직접 신고해야 하지만, 모른척 넘어가는 사용자들이 있습니다.  
+나중에 다른 사용자가 이를 발견하고 신고하게 되면 어떤 사용자에 의한 사고인지 모르기 때문에 쏘카에서 수리 비용을 전액 부담해야합니다.  
 
-팀원정보 및 담당이나 사진 및 SNS를 이용하여 소개하세요.
+저희 프로젝트는 블랙박스의 영상 데이터와 메타 데이터를 이용하여 이러한 사고들을 검출하는 것입니다.
 
-### 4. 사용법
-
-소스코드제출시 설치법이나 사용법을 작성하세요.
-
-### 5. 기타
-
-추가적인 내용은 자유롭게 작성하세요.
-
-
-## Markdown을 사용하여 내용꾸미기
-
-Markdown은 작문을 스타일링하기위한 가볍고 사용하기 쉬운 구문입니다. 여기에는 다음을위한 규칙이 포함됩니다.
+### 2. 팀 소개
 
 ```markdown
-Syntax highlighted code block
+담당 교수님: 이재구
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+E-mail: jaekoo@kookmin.ac.kr
 ```
 
-자세한 내용은 [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+```markdown
+조영완
 
-### Support or Contact
+학번: 20181694  
+E-mail: jyy1551@kookmin.ac.kr
+역할 : 메타 데이터를 이용한 사고 검출 모델 개발
+Github : https://github.com/whduddhks
+```
 
-readme 파일 생성에 추가적인 도움이 필요하면 [도움말](https://help.github.com/articles/about-readmes/) 이나 [contact support](https://github.com/contact) 을 이용하세요.
+```markdown
+조익현
+
+학번: 20181695  
+E-mail: 8982679@kookmin.ac.kr
+역할 : 영상, 메타 데이터를 합친 모델 개발
+Github : https://github.com/childyouth
+```
+
+### 3. 개발  
+
+개발 방법은 2가지로 나누었습니다.  
+영상 데이터의 경우, 데이터가 블러처리 되거나 환경에 따라 영향을 많이 받습니다.  
+따라서, 1차적으로 메타 데이터만을 이용하여 사고를 검출하는 방법을 선택했고  
+영상과 메타 데이터를 한번에 이용하는 모델 개발 방법을 선택했습니다.
+
+
+### 4. 시연영상 (유튜브)
+[![시연](http://img.youtube.com/vi/UQWx4GgbSds/0.jpg)](https://youtu.be/UQWx4GgbSds) 
+
+**메타 데이터 이용**
+1. 머신러닝 - decision tree, Random Forest
+2. 딥러닝 - 1d cnn, rnn
+
+**영상+메타 데이터 이용**
+1. VGG16 / Resnet + lstm
